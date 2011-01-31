@@ -1,0 +1,109 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>NCSU Template Framework - Read Me</title>
+<style type="text/css" media="screen">
+	li.folder { list-style-image:url('_global/assets/folder-icon.gif'); margin:4px 0; }
+	li.file { list-style-image:url('_global/assets/file-icon.gif'); margin:4px 0; }
+	div.code {margin:10px 0; padding:8px 8px 6px 8px; border:1px solid #C5BD9D; background-color:#E5E1D0; font-family:"Courier New", Courier, monospace;}
+	div.code pre {font-family:"Courier New", Courier, monospace; font-size:inherit; }
+	span.alert {font-weight: bold; color: red; }
+</style>
+</head>
+
+<body>
+<h1>NC State Framework Documentation</h1>
+<p>The purpose of the template is to offer a solid foundation for custom on-brand, accessible website design. The code base should give developers a good starting point for most projects, offering an alternative to the NC State template.</p>
+<ul>
+	<li><a href="#requirements">Requirements</a></li>
+    <li><a href="#quick_start">Quick Start</a></li>
+  <li><a href="#directory_structure">Directory Structure</a></li>
+  <li><a href="#template_features">Template Features</a></li>
+</ul>    
+<p>This  template system includes three possible configurations: three-column, two-column and two-column-with-horizontal-navigation (with an optional superfish jQuery plugin). Developers can bypass template styles by using the local stylesheet in the css folder.</p>
+<h2><a name="requirements" id="requirements"></a>Requirements</h2>
+<ul>
+  <li>PHP 4+</li>
+  <li>Dreamweaver CS3 or higher (we haven't tested this on versions lower than CS3.)</li>
+</ul>
+<h2><a name="quick_start"></a>Quick Start</h2>
+<ol>
+  <li><strong>Inside the &quot;core&quot; folder, rename &quot;config-sample.php&quot; to &quot;config.php&quot;. </strong><br />
+    <br />
+  </li>
+  <li><strong>Open config.php. Define your site URL.</strong>
+  
+  <div class="code">define('ROOT_URL', 'http://yoursiteurl.com/');</div>
+<p> Include &quot;http://&quot;. Our code uses 'ROOT_URL'  to generate some links to your home page as well as some other server magic.</p>
+<p><strong>Modify the site configuration array.</strong></p>
+<div class="code"><pre>$config = array(<br />
+    'siteName' =&gt; 'Department of Environmental &amp;amp; Molecular Toxicology', <br />
+    'brand_strip_colors' =&gt; 'black',// options: black, red, red_on_white, black_on_white<br />
+    'headerBg' =&gt; 'black', // Header and Footer Background =&gt; options: black, red, white<br />
+    'headerColor' =&gt; 'white' // options: black, red, white<br />
+);</pre>
+</div>
+<p>This array allows you to plug in your site name, which will automatically render in the header area and &lt;title&gt; of your documents. The other options allow you to specify styling for the branding bar and header area.</p>
+  </li>
+  <li>
+    <p><strong>Setup a &quot;Site&quot; in Dreamweaver which points to the root folder. Create a new page from one of the included templates or use one of the existing example pages located in the root directory.</strong></p>
+  </li>
+</ol>
+
+<h2><a name="directory_structure"></a>Directory Structure</h2>
+<ul>
+	<li class="folder"><strong>root folder</strong>
+		<ul>
+            <li class="folder"><strong>core</strong> - contains core configuration files and assets. <span class="alert">*Outside of config-sample.php, core files should only be edited by developers</span>
+          <ul>
+                    <li class="folder"><strong>assets</strong> - contains misc. images used in the framework.</li>
+ 					<li class="folder"><strong>classes</strong> - placeholder for user-created php classes</li>
+				  <li class="folder"><strong>css</strong> - includes global, navigation and reset stylesheets.</li>
+					<li class="folder"><strong>js</strong> - contains global and superfish javascript files</li>
+                    <li class="file">config-sample.php - rename to config.php and fill in with your site info</li>
+                    <li class="file">functions.php - helper functions.</li>
+              </ul>
+          </li>
+      <li class="folder"><strong>css</strong>
+				<ul>
+					<li class="file">styles.css - All user styles should go her</li>
+                </ul>
+            </li>
+            <li class="folder"><strong>images</strong> - user photos, images and graphics</li>
+            <li class="folder"><strong>includes</strong> - contains snippets that are included by PHP
+				<ul>
+					<li class="file">brand_bar.php - NCSU Branding Strip</li>
+                    <li class="file">footer.php - Footer information</li>
+                    <li class="file">header.php - includes the page header</li>
+                    <li class="file">nav-horiz.php - used for the horizontal navigation on the horizontal template</li>
+                    <li class="file">nav.php - used for the vertical navigation on the the two and three column layouts</li>
+                  <li class="file">search.php - the search bar</li>
+                    <li class="file">sidebar.php - right sidebar used in the three column layout + two column horizontal layout</li>                    
+                </ul>
+          </li>
+            <li class="folder"><strong>js</strong>
+				<ul>    
+					<li class="file">script.js - All user-defined javascript should go here</li>
+                </ul>
+            </li>
+            <li class="folder"><strong>Templates</strong> - Dreamweaver templates
+				<ul>
+       	  			<li class="file">three_col_vert.dwt.php - three column, vertical navigation template</li>
+                    <li class="file">two_col_vert.dwt.php - two column, vertical navigation template</li>
+                    <li class="file">two_col_horiz.dwt.php - two column, horizontal navigation template</li>
+                </ul>    
+   		  </li>
+      		<li class="file"><a href="three_col_vert-example.php">three_col_vert-example.php</a> - Sample page created from template (breadcrumbs + page_title on)</li>   
+            <li class="file"><a href="two_col_horiz-example.php">two_col_horiz-example.php</a> - Sample page created from template (breadcrumbs + page_title on)</li>
+            <li class="file"><a href="two_col_vert-example.php">two_col_vert-example.php</a> - Sample page created from template (breadcrumbs + page_title on)</li>     
+   	        <li class="file"><a href="two_col_horiz-example-player.php">two_col_horiz-example-player.php</a> - Sample page created from template (feature_player + page_title on)</li>
+   	        <li class="file"><a href="two_col_vert-example-player.php">two_col_vert-example-player.php</a> - Sample page created from template (feature_player + page_title on)</li>
+        </ul>
+  </li>
+</ul>
+                    	
+<h2><a name="template_features"></a>Template Features</h2>
+<p>Each template contains optional regions that can be turned on or off on an individual page basis. Optional template regions can be controlled in Dreamweaver by selecting Modify &gt; Template Properties. By default two optional regions are turned on (<strong>page_title </strong>and<strong> breadcrumbs</strong>). A third optional region <strong>feature_player</strong> is available for the two column templates but turned off by default. The feature_player optional region contains a jQuery powered featured content player.</p>
+</body>
+</html>

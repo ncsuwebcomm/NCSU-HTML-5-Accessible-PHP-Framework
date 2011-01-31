@@ -1,0 +1,28 @@
+/* Horizontal Nav */
+#two_col_horiz nav #nav-container{display:inline;margin:0 auto;width:100%}
+.sf-menu,.sf-menu *{list-style:none;padding:0}
+/* VANILLA THEME HORIZ NAV  */.sf-menu{background-color:#fff;float:left;line-height:1.0;margin-bottom:-1px;margin-top:2px}
+.sf-menu ul{position:absolute;top:-999em;width:10em;}
+.sf-menu ul li{width:100%}
+.sf-menu li:hover{visibility:inherit}
+.sf-menu li{background:#fff url(http://www.ncsu.edu/_assets/images/layout_assets/head_topnav_div.gif) no-repeat right center;float:left;position:relative;z-index:199}
+.sf-menu a{display:block;padding:2px 5px;position:relative;text-decoration:none;text-transform:uppercase}
+.sf-menu li:hover ul,.sf-menu li.sfHover ul{left:0;top:3.3em;z-index:99}
+.sf-menu a,.sf-menu a:visited{color:#666}
+.sf-menu li li{background:#fff;border-left:1px solid #cfcdc8;border-right:1px solid #cfcdc8;width:325px}
+.sf-menu li ul{background-color:#fff;margin-top:-3px;width:345px; border-left: 1px solid #cfcdc8; border-right: 1px solid #cfcdc8; }
+.sf-menu ul li,.sf-menu ul{border:none}
+.sf-menu li,.sf-menu ul{border-bottom:1px solid #cfcdc8}
+.sf-menu li li li{background:#fff}
+.sf-menu li:hover,.sf-menu li.sfHover{background:#fff url(http://www.ncsu.edu/_assets/images/layout_assets/head_topnav_div.gif) no-repeat right center;outline:0}
+.sf-menu li li:hover,.sf-menu li li.sfHover{background:#fff;outline:0;text-decoration:underline}
+.sf-menu li li a{text-transform:none}
+/* apply hovers to modern browsers  */a:focus > .sf-sub-indicator,a:hover > .sf-sub-indicator,a:active > .sf-sub-indicator,li:hover > a > .sf-sub-indicator,li.sfHover > a > .sf-sub-indicator{background-position:-10px -100px}
+.sf-sub-indicator{display:none}
+.sf-menu ul a > .sf-sub-indicator{background-position:0 0}
+ul.children{width:150px}
+ul.sf-menu li{padding-left:10px;padding-right:10px}
+ul.sf-menu li:hover li ul,ul.sf-menu li.sfHover li ul,ul.sf-menu li li:hover li ul,ul.sf-menu li li.sfHover li ul{top:-999em}
+ul.sf-menu li li:hover ul,ul.sf-menu li li.sfHover ul,ul.sf-menu li li li:hover ul,ul.sf-menu li li li.sfHover ul{left:10em;top:0}
+.sf-menu li.last,.sf-menu li:hover.last,.sf-menu li.sfHover.last{background-image:none}
+.sf-menu ul .sf-sub-indicator,.sf-menu ul a:focus > .sf-sub-indicator,.sf-menu ul a:hover > .sf-sub-indicator,.sf-menu ul a:active > .sf-sub-indicator,.sf-menu ul li:hover > a > .sf-sub-indicator,.sf-menu ul li.sfHover > a > .sf-sub-indicator{background-position:-10px 0}

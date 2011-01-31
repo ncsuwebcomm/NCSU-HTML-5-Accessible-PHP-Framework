@@ -1,0 +1,26 @@
+@charset "utf-8";
+/* CSS Document */
+
+#wrapper{ width: 100%;  margin: 0; float: none; background: #fff url(none); }
+
+#nav, #brand_bar, #foot, div.hidden-anchors, .screen-reader-text { display: none; }
+
+body { font-size: .75em; color: #000; }
+
+img {display: block; }
+
+#headertop h5 { font-size: 2em; }
+
+h1,h2,h3,h4,h5,h6 { font-weight: bold; color: #000; }
+
+h1 { font-size: 200%; }
+h2 { font-size: 155%; }
+h3 { font-size: 125%; }
+h4 { font-size: 100%; }
+h5 { font-size: 100%; }
+h6 { font-size: 90%;}
+
+
+a:link, a:visited { color: #00c; font-weight: bold; text-decoration: underline; }
+#content a:link:after, #content a:visited:after { content: " (" attr(href) ") "; }
+

@@ -1,0 +1,1 @@
+<?php header('location:READ_ME.html'); ?>
