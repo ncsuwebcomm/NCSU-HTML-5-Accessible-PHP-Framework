@@ -11,6 +11,7 @@
 
 <!-- InstanceEndEditable -->
 
+<link type="text/plain" rel="author" href="humans.txt" />
 <meta charset="utf-8" />  
 <meta name="robots" content="index,follow" />
 <meta name="revisit-after" content="7 days" />

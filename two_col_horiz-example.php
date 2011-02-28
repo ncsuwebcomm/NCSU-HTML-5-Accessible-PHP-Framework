@@ -3,15 +3,19 @@
    
 <head>
 <?php include('core/config.php'); ?>
+
 <!-- InstanceBeginEditable name="doctitle" -->
 <title>Page Title - <?php echo $config['siteName']; ?> :: North Carolina State University</title>
 <meta name="description" content="" />
 <meta name="keywords" content="" />
 
 <!-- InstanceEndEditable -->
+
+<link type="text/plain" rel="author" href="humans.txt" />
 <meta charset="utf-8" />
 <meta name="robots" content="index,follow" />
 <meta name="revisit-after" content="7 days" />
+
 <!-- Core CSS -->
 <link href="core/css/reset.css" media="screen" rel="stylesheet" type="text/css" />
 <link href="http://www.ncsu.edu/brand/utility-bar/iframe/css/utility_bar_iframe.css" rel="stylesheet" media="screen" type="text/css" />

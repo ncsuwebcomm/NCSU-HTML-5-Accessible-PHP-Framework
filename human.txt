@@ -1,0 +1,11 @@
+/* TEAM */
+	Developer: NCSU Web Communications
+	Contact: web_feedback [at] ncsu.edu
+	From:Raleigh, NC
+
+/* SITE */
+	Last update:2011/02/25
+	Language:English
+	Doctype:HTML5 with CSS3
+	Tools:PHP
+	IDE:Dreamweaver CS4
