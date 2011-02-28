@@ -108,12 +108,13 @@ a:visited{color:#CC0000}
 a:active,a:hover{text-decoration:none}
 p{color:#333;font-family:"Verdana", Arial , Helvetica, sans-serif;font-size:1.1em;line-height:1.6em;margin-bottom:18px}
 #content p{padding-right:10px}
-#content ul li{font-size:1.1em;line-height:1.4em;padding-bottom:5px}
-#content li li{font-size:100%}
-#content ul li{list-style-image:url(../assets/right-arrow.gif)}
+#content ul li, #sidebar ul li{font-size:1.1em;line-height:1.4em;padding-bottom:5px}
+#content li li, #sidebar li li{font-size:100%}
+#content ul li, #sidebar ul li{list-style-image:url(../assets/right-arrow.gif)}
 #content p,#content li,#content blockquote{padding-right:40px}
 #two_col_horiz #content blockquote, #two_col_vert #content blockquote{padding-left: 40px; padding-right:40px}
-ul{margin:0 30px 18px}
+#content ul{margin:0 30px 18px}
+#sidebar ul{margin:0 12px 18px;}
 ol{list-style:decimal;margin:0 0 18px 1.5em}
 ol ol{list-style:upper-alpha}
 ol ol ol{list-style:lower-roman}
